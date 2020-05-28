@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>KRON VST INŽENJERING</title>
+  </head>
+
+  <body class="body">
+
+    <div class="container-fluid no-gutters">
+      <div id="header-menu-hamburger">
+        <div id='ser-flag' href='index-srb.html'>
+          <a><img  class='img-fluid-serbia' src='./img/flag/serbia-flag.gif'/></a>
+        </div>
+        <div id='ger-flag'>
+          <a></a><img href='#' class='img-fluid-germany' src='./img/flag/germany-flag.gif'/></a>
+        </div>
+        <div id='uk-flag'>
+          <a><img href='#' class='img-fluid-uk' src='./img/flag/usa-flag.gif'/></a>
+        </div>
+        <!----
+        <div class="menu-click">
+          <img class='menu_img'  src="./img/flag/menu_icon.png" style="height: 36px; width: 36px;"/>
+            <a href="#" class="menu-click-content">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+      </div>
+      ---->
+      <div class="menu-click">
+        <a href="#" class="menu-click-content">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <span style="color: blue; font-weight: bold; position: relative; left: 10px">MENU</span>
+    </div>
+  </div>
+
+  
+      <div id="my_home">
+        <div class="home">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 d-flex align-items-center">
+                <div class="home-box">
+                  <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="./img/logo/Logo_t.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR MENU START -->
+
+      <div class="sidebar-nav">
+        <h5>NAVIGACIJA</h5>
+        <div class="language-nav">
+          <strong>Jezik:</strong>
+          <p class="sidebar-nav-paragraph">
+            <a href="index-srb.html">
+              <span class="srb"> SRB</span>
+            </a>
+            <a href="#">
+              <span class="eng"> ENG</span>
+            </a>
+            <a href="#">
+              <span class="ger"> GER</span>
+            </a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="menu-click-close ">
+          <a href="#" class="menu-click-content">
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <ul>
+          <li class='list_item'><a href="index-srb.html">Pocetna</a></li>
+          <li class='list_item'><a href="o_nama.html">O nama</a></li>
+          <li class='list_item'><a href="referenca_srbija.html">Reference Srbija</a></li>
+          <li class='list_item'><a href="referenca_nemacka.html">Reference Nemacka</a></li>
+          <li class='list_item'><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class='mini_logo'>
+            <img class="img-fluid" src="./img/logo/Logo_no.png" />
+        </div>
+        <div class="sidebar-info">
+          <img src="#" alt="" class="img-fluid" />
+          <p class="mobile-sidebar-none">
+            <b
+              >“Želimo da budemo čvrst oslonac svim našim starim i novim
+              kljientima”.</b
+            >
+          </p>
+          <p>
+            Srbija, 35000 Jagodina<br />
+            Mladena Milenkovica 41
+          </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="black-overlay" style="display: none;"></div>
+      <a href="#" class="back-top" style="display: none;"
+        ><i class="fa fa-angle-up" aria-hidden="true"></i
+      ></a>
+      <!-- SIDE MENU END -->
+    </div>
+
+    <!---Footer-->
+
+    <footer class='footer'>
+      <p class='paragraph'>KRON VST INŽENJERING<p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SIDE MENU SCRIPT-->
+    <script>
+      $(document).ready(function() {
+        $(".menu-click").click(function() {
+          $(".sidebar-nav").animate({ right: 0 }, 500);
+          $(".black-overlay").fadeIn(500);
+          $("body").addClass("no-scroll");
+        });
+        $(".menu-click-close").click(function() {
+          $(".sidebar-nav").animate({ right: "-335px" }, 500);
+          $(".black-overlay").fadeOut(500);
+          $("body").removeClass("no-scroll");
+        });
+        $(".black-overlay").click(function() {
+          $(".sidebar-nav").animate({ right: "-335px" }, 500);
+          $(".black-overlay").fadeOut(500);
+          $("body").removeClass("no-scroll");
+        });
+      });
+    </script>
+  </body>
+</html>

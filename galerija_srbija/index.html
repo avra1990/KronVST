@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="../dist/simple-lightbox.css" />
+<style>
+	.small-demo img {
+		width: 200px;
+		height: 200px;
+	}
+	.small-demo {
+		text-align: center;
+		margin: auto;
+	}
+</style>
+<title>SimpleLightbox by André Rinas</title>
+</head>
+<body>
+<header>
+	<div class="gradient"></div>
+	<div class="header-container">
+		<div class="container demo-container">
+			<div class="small-demo">
+				<a href="img/full/01.jpg"><img src="img/thumb/01.jpg" alt="" /></a>
+				<a rel="rel2" href="img/full/02.jpg"><img src="img/thumb/02.jpg" alt="" /></a>
+				<a rel="rel3" href="img/full/03.jpg"><img src="img/thumb/03.jpg" alt="" /></a> <br />
+				<a rel="rel2" href="img/full/04.jpg"><img src="img/thumb/04.jpg" alt="" /></a> 
+				<a rel="rel2" href="img/full/05.jpg"><img src="img/thumb/05.jpg" alt="" /></a>
+				<a rel="rel1" href="img/full/06.jpg"><img src="img/thumb/06.jpg" alt="" /></a>
+				<div class="clearing"></div>
+				<div class="caption">
+					Click on an image to see it in action. Note, that the lightbox is grouped by rel attribute.
+				</div>
+			</div>
+			<div class="clearing"></div>
+		</div>
+	</div>
+</header>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/michalsnik/aos@2.1.1/dist/aos.js"></script>
+<script src="../dist/simple-lightbox.js"></script>
+<script>
+		var $gallery = new SimpleLightbox('.small-demo a', {
+			    // default source attribute
+				sourceAttr: 'href',
+				// shows fullscreen overlay
+				overlay: true,
+				// shows loading spinner
+				spinner: true,
+				// shows navigation arrows
+				nav: true,
+				// shows close button
+				close: true,
+				// text for close button
+				closeText: 'x',
+				// swipe up or down to close gallery
+				swipeClose: true,
+				// file extensions
+				fileExt: 'png|jpg|jpeg|gif',
+				// weather to slide in new photos or not, disable to fade
+				animationSlide: true,
+				// animation speed in ms
+				animationSpeed: 250,
+				// image preloading
+				preloading: true,
+				// keyboard navigation
+				enableKeyboard: true,
+				// endless looping
+				loop:  true,
+				// closes the lightbox when clicking outside
+				docClose:  true,
+				// how much pixel you have to swipe
+				swipeTolerance: 50,
+				// lightbox wrapper Class
+				className: 'simple-lightbox',
+				// width / height ratios
+				widthRatio: 0.8,
+				heightRatio: 0.9,
+				// scales the image up to the defined ratio size
+				scaleImageToRatio: false,
+				// disable right click
+				disableRightClick: false,
+				// alert message
+				alertErrorMessage: 'Image not found, next image will be loaded',
+				// enable history back closes lightbox instead of reloading the page
+				history: true,
+				// time to wait between slides
+				throttleInterval: 0
+		});
+
+
+</script>
+</body>
+</html>

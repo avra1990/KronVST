@@ -1,0 +1,491 @@
+/*Menu button*/
+
+.no-gutters {
+  padding-left: 0;
+  padding-right: 0;
+}
+.sidebar-nav {
+  color: #212529;
+}
+
+.sidebar-nav-paragraph {
+  color: #212529;
+}
+#header-menu-hamburger {
+  height: 40px;
+  background: linear-gradient(to right, black, #099BE6);
+  position: relative;
+}
+
+#header-menu-hamburger img {
+  height: 36px;
+  position: absolute;
+  right: 10px;
+}
+
+.menu-click {
+  position: absolute;
+  right: 20px;
+  top: calc(100% - 33px);
+  width: 70px;
+  height: 70px;
+  border: 3px solid blue;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.menu-click .menu-click-content {
+  display: table-cell;
+  vertical-align: middle;
+  width: 64px;
+  height: 64px;
+  background-color: blue;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.menu-click .menu-click-content span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  margin: 3px auto;
+}
+
+.menu-click .menu-click-content span:first-of-type {
+  width: 25%;
+}
+
+.menu-click .menu-click-content span:nth-child(2) {
+  width: 50%;
+}
+
+.menu-click .menu-click-content span:last-of-type {
+  width: 40%;
+}
+
+.menu-click:hover .menu-click-content span {
+  width: 70%;
+}
+
+/* menu click close */
+.menu-click-close {
+  position: absolute;
+  right: 265px;
+  top: 83px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #2f2c2c;
+  border-radius: 50%;
+  z-index: 35;
+}
+
+.menu-click-close .menu-click-content {
+  width: 64px;
+  height: 64px;
+  background-color: blue;
+  color: blue;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+}
+
+.menu-click-close .menu-click-content span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  border-radius: 10px;
+  margin: auto;
+  width: 50%;
+  transition: all 0.3s ease;
+  left: 25%;
+  top: 50%;
+  position: absolute;
+}
+/*
+.menu-click-close .menu-click-content span:first-of-type {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.menu-click-close .menu-click-content span:last-of-type {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+*/
+/*Menu button end*/
+
+/* SIDEBAR MENU BUTTON  */
+.menu-click {
+  position: absolute;
+  right: 20px;
+  top: calc(100% - 33px);
+  width: 70px;
+  height: 70px;
+  border: 3px solid #00000021;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.menu-click .menu-click-content {
+  display: table-cell;
+  vertical-align: middle;
+  width: 64px;
+  height: 64px;
+  background-color: blue;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.menu-click .menu-click-content span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  margin: 3px auto;
+}
+
+.menu-click .menu-click-content span:first-of-type {
+  width: 25%;
+}
+
+.menu-click .menu-click-content span:nth-child(2) {
+  width: 50%;
+}
+
+.menu-click .menu-click-content span:last-of-type {
+  width: 40%;
+}
+
+.menu-click:hover .menu-click-content span {
+  width: 70%;
+}
+/* menu click close */
+.menu-click-close {
+  position: absolute;
+  right: 265px;
+  top: 83px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #2f2c2c;
+  border-radius: 50%;
+  z-index: 35;
+}
+
+.menu-click-close .menu-click-content {
+  width: 64px;
+  height: 64px;
+  background-color: blue;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+}
+
+.menu-click-close .menu-click-content span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  border-radius: 10px;
+  margin: auto;
+  width: 50%;
+  transition: all 0.3s ease;
+  left: 25%;
+  top: 50%;
+  position: absolute;
+}
+
+.menu-click-close .menu-click-content span:first-of-type {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.menu-click-close .menu-click-content span:last-of-type {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+/* sidebar nav */
+.sidebar-nav {
+  height: 100%;
+  position: fixed;
+  display: block;
+  background-color: #fff;
+  top: 0px;
+  z-index: 99999;
+  bottom: 0px;
+  right: -335px;
+  width: 300px;
+  padding-left: 55px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.sidebar-nav h5 {
+  font-size: 14px;
+  margin-bottom: 14px;
+  color: #212529;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  float: none;
+  margin-right: 30px;
+}
+
+.language-nav p {
+  margin-top: 0px !important;
+  font-size: 18px !important;
+}
+
+.language-nav strong {
+  color: #212529;
+}
+
+.language-nav .srb {
+  color: #212529;
+}
+
+.language-nav .eng {
+  color: #212529;
+}
+
+.language-nav .ger {
+  color: #212529;
+}
+
+.sidebar-nav p {
+  margin-top: 15px;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.sidebar-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.sidebar-nav ul li a {
+  font-size: 22px;
+  color: #000;
+  line-height: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+
+.list_item:hover {
+  background-color:white;
+  box-shadow: 2px 2px 2px 2px rgb(221,228,221);
+  border: 3px rgb(221,228,221);
+}
+
+.sidebar-nav ul li a:hover {
+  text-decoration: none;
+  
+}
+
+
+.sidebar-social ul li a {
+  float: left;
+  margin-right: 15px;
+}
+
+.black-overlay {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 100;
+}
+
+.home-content {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.home-content-main h1 {
+  font-size: 52px;
+  line-height: 46px;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 25px;
+  letter-spacing: 1px;
+}
+
+.home-content-main h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+/*Menu button end*/
+
+/*Glavni css*/
+.home .navbar-brand .img-fluid {
+    opacity: 1;
+}
+
+.mini_logo {
+  margin-top: 30px;
+}
+
+.home {
+  background-image: url("../img/resize/slika.jpg" );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 585px;
+}
+
+  .home-box .navbar-brand .img-fluid{
+    max-width: 100%;
+    margin-left: 50%;
+  }
+
+  .home-box .navbar-brand .img-fluid:hover{
+    transform: scale(1.3);
+  }
+
+
+.home-box h1 {
+  font-size: 70px;
+  margin-bottom: 25px;
+  position: auto;
+}
+
+.home .home-box {
+  position: center;
+}
+
+/*About us*/
+
+
+.about-box {
+  text-align: center;
+}
+
+.about-box h1 {
+  font-size: 36px;
+}
+
+.about-box p {
+  font-size: 18px;
+}
+
+.about-info span {
+  font-size: 80px;
+  text-align: center;
+  display: block;
+}
+.about-info small {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+}
+/*About box*/
+
+.about-box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 585px;
+}
+/*O nama*/
+
+.justify-content-center::after {
+  content: "";
+  background: url("../img/logo/Logo_transparency.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  opacity: 0.3;
+  top: 130px;
+  left: 0px;
+  bottom: 180px;
+  right: 0px;
+  position: absolute;
+  z-index: -1; 
+}
+
+
+.reference {
+  background-color: rgb(221, 251, 215);
+}
+
+.gallery {
+  background-color: rgb(255, 102, 102);
+}
+
+.contact {
+  background-color: white;
+  margin-top:5%;
+  height: 600px;
+}
+
+.texts {
+  margin-top: -30px;
+}
+
+/* FOOTER*/
+
+.footer {
+  height: 30px;
+  margin-top: 0px;
+  background: linear-gradient(to right, black,#099BE6);
+  color: white;
+
+}
+
+.footer .paragraph {
+  text-align: center;
+}
+
+/*Flag icons*/
+
+ #ger-flag {
+  margin-right: 170px; 
+  position: relative;
+}
+
+.img-fluid-serbia {
+  margin-right: 240px;
+}
+
+.img-fluid-uk {
+  margin-right: 90px;
+  position: relative;
+}
+
+/*Serbia and Germany flags*/
+.serbia-contract {
+  height: 200px;
+}
+
+.germany-contract {
+  height: 200px;
+}
